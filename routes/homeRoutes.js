@@ -10,11 +10,11 @@ homeRouter.get('/about-me',(req,res)=>{
 })
 
 homeRouter.get('/contact-me',(req,res)=>{
-    res.render('contact');
+    res.render('contact', {title : 'Contact-me Page', css: 'contact'});
 })
 
 homeRouter.get('/projects',(req,res)=>{     
-    res.render('project');
+    res.render('project', {title : 'Projects Page', css: 'project'});
 })
 
 module.exports = homeRouter;
