@@ -9,7 +9,7 @@ main{
     width: 100%;
     height: 100vh;
     font-size: 1rem;
-    background-color: #282727;
+    background-color: #1a1a1a;
 }
 
 /* ................................header....................................... */
@@ -54,49 +54,111 @@ header .theme-toggle:hover{
 }
 
 /* ...........................................projects.............................. */
-
 .projects{
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.project{
+    border: 2px solid white;
+    width: 22%;
+    height: 45vh;
+    position: relative;
+    border-radius: 11%;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project img{
     width: 100%;
     height: 80%;
     object-fit: cover;
-    border-radius: 11%;
+    border-top-left-radius: 11%;
+    border-top-right-radius: 11%;
 }
 
 h1{
     text-align: center;
     margin-top: 5vh;
     font-size: 2rem;
-}
-
-.project{
-    border: 1px solid white;
-    width: 22%;
-    height: 45vh;
-    position: relative;
-    border-radius: 11%;
+    color: rgba(255, 255, 255, 0.721);
+    background: linear-gradient(90deg, rgba(0,36,61,1) 0%, rgba(2,48,71,1) 35%, rgba(0,87,102,1) 100%);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .desc{
-    background-color: #898989;
+    background: linear-gradient(90deg, rgba(0,36,61,1) 0%, rgba(2,48,71,1) 35%, rgba(0,87,102,1) 100%);
     position: absolute;
     bottom: 0;
-    width: 90%;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    padding-left: 5px;
+    width: 100%;
+    border-bottom-left-radius: 11%;
+    border-bottom-right-radius: 11%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .desc h2{
     margin: 0;
-    color:teal;
+    color: rgba(255, 255, 255, 0.721); 
     text-decoration: underline;
 }
 
-.desc p{
-    color: #696969;
+.skills{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+ 
+.skills .div{
+    width: 1.4rem;
+    height: 1.4rem;
+}
 
+.skills .div img{
+    width: 100%;
+    height: 100%;
+}
+
+.desc p{
+    font-size: 0.7rem;
+    color: beige;
+    margin: 0;
+}
+
+.add-box{
+    border: 2px solid white;
+    width: 22%;
+    height: 45vh;
+    position: relative;
+    border-radius: 11%;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.add-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.add-box a i{
+    font-size: 2rem;
+    color: white;
 }
